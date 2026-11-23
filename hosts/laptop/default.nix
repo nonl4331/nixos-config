@@ -38,6 +38,8 @@
     extra-trusted-public-keys = [ "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4=" ];
   };
 
+  nixpkgs.config.allowUnfree = true;
+
   programs.noctalia.recommendedServices.enable = true;
 
 
@@ -74,9 +76,8 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  services.power-profiles-daemon.enable = true;
   # Enable sound.
-  # services.pulseaudio.enable = true;
-  # OR
   services.pipewire = {
     enable = true;
     pulse.enable = true;
