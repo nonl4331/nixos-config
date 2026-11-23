@@ -7,12 +7,15 @@
     btop
     fastfetch
     firefox
-    kitty
     powertop
     ripgrep
     vesktop
     zsh
   ];
+  programs.kitty = {
+    enable = true;
+    settings.confirm_os_window_close = 0;
+  };
   programs.zsh = {
     enable = true;
     shellAliases.rebuild = "sudo nixos-rebuild switch --flake ~/nixos-config";
@@ -30,6 +33,7 @@
 	show_cheatsheet = false;
 	autostart = ["noctalia"];
       };
+      input.focus.follows_mouse = "always";
       appearance = {
         opaque_fullscreen = true;
 	blur.enabled = false;
