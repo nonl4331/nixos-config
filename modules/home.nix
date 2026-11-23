@@ -56,6 +56,11 @@
         mode = "light";
 	builtin = "Catppuccin";
       };
+      wallpaper = {
+        enabled = true;
+        directory = "${config.xdg.userDirs.pictures}/wallpaper";
+	automation.enabled = true;
+      };
       shell = {
         corner_radius_scale = 0.0;
       };
