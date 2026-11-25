@@ -77,6 +77,8 @@
   services.printing.enable = true;
 
   services.power-profiles-daemon.enable = true;
+  services.upower.enable = true;
+
   # Enable sound.
   services.pipewire = {
     enable = true;
@@ -89,7 +91,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.nick = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
       tree
     ];

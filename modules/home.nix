@@ -3,6 +3,7 @@
   imports = [ inputs.umbriel.homeModules.default inputs.noctalia.homeModules.default ];
   home.stateVersion = "26.05";
   home.packages = with pkgs; [
+    acpi
     bitwarden-desktop
     btop
     fastfetch
@@ -67,6 +68,13 @@
       bar.default = {
         thickness = 24;
 	radius = 0;
+      };
+      widget.battery = {
+        show_label = true;
+	type = "battery";
+	label_content = "percent";
+	device = "auto";
+	display_mode = "graphic";
       };
     };
   };
