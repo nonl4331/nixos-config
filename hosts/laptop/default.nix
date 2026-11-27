@@ -78,6 +78,8 @@
 
   services.power-profiles-daemon.enable = true;
   services.upower.enable = true;
+  
+  services.tailscale.enable = true;
 
   # Enable sound.
   services.pipewire = {

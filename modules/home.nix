@@ -8,7 +8,9 @@
     btop
     fastfetch
     firefox
+    mpv
     powertop
+    libqalculate
     ripgrep
     vesktop
     zsh
@@ -47,6 +49,8 @@
 	"Mod" = "spawn noctalia msg panel-toggle launcher";
 	"Mod+Q" = { action = "window-close"; repeat = false; };
 	"Mod+Escape" = "session-quit";
+	"Mod+F" = { action = "window-toggle-fullscreen"; repeat = false; };
+	"Mod+Ctrl+F" = { action = "window-toggle-maximize"; repeat = false; };
       };
     };
   };
