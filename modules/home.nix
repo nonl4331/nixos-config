@@ -9,6 +9,7 @@
     fastfetch
     firefox
     mpv
+    networkmanagerapplet
     powertop
     libqalculate
     ripgrep
